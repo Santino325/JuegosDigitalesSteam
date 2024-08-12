@@ -1,0 +1,202 @@
+/* styles.css */
+
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+section {
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para la lista de juegos */
+#games-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    height: 200px; /* Altura fija para que todos los elementos sean iguales */
+    box-sizing: border-box;
+}
+
+.game-item span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: auto; /* Mueve el botón al fondo del contenedor */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilo para el juego seleccionado */
+#selected-game {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#selected-game p {
+    margin: 0.75rem 0;
+    font-size: 1.2rem;
+}
+
+#payment-link {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+#payment-link:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el formulario de registro */
+#register {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fafafa;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#register-form input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#register-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#register-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para la sección de contacto */
+#contact {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fafafa;
+    margin-bottom: 2rem;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la sección de descuentos */
+#discounts {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fafafa;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Estilo para la promoción diaria */
+#daily-promotion {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Asegura que el contenido no se desplace */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}

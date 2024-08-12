@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Confirmación de Pago</h1>
+    </header>
+
+    <section id="payment-info">
+        <h2>Información de Pago</h2>
+        <p id="payment-details"></p>
+        <p>Por favor, realiza el pago utilizando el siguiente alias:</p>
+        <p id="alias"></p>
+        <p>Luego, contáctanos a través de WhatsApp o Instagram y envíanos el comprobante de pago.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contáctanos</h2>
+        <p>Síguenos en Instagram: <a href="https://www.instagram.com/juegos_digitales_steam/" target="_blank">juegos_digitales_steam</a></p>
+        <p>Teléfono: +54 3518023457</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ventas de Juegos Digitales. CVU: 0000003100076952929481</p>
+    </footer>
+
+    <script>
+        // Obtener los parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameName = urlParams.get('game');
+        const gamePrice = urlParams.get('price');
+        const alias = urlParams.get('alias');
+
+        // Mostrar la información en la página
+        document.getElementById('payment-details').textContent = `Juego: ${gameName} - Precio: $${gamePrice}`;
+        document.getElementById('alias').textContent = alias;
+    </script>
+</body>
+</html>

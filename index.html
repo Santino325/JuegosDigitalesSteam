@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas de Juegos Digitales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ventas de Juegos Digitales</h1>
+    </header>
+    <section id="daily-promotion">
+        <h2>Promoción del Día</h2>
+        <p id="promotion-message"></p>
+    </section>
+    
+    <section id="games-list">
+        <div class="game-item">
+            <span>Rise of Tomb Raider:</span> $18,500
+            <button onclick="selectGame('Rise of Tomb Raider', 18500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Elden Ring:</span> $10,000
+            <button onclick="selectGame('Elden Ring', 10000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Tomb Raider 2013:</span> $3,000
+            <button onclick="selectGame('Tomb Raider 2013', 3000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>The Last Of Us Part 1:</span> 5000
+            <button onclick="selectGame('The Last Of Us Part 1', 4500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Shadow Of Tomb Raider:</span> $5,000
+            <button onclick="selectGame('Shadow Of Tomb Raider', 5000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>DAYS GONE:</span> $10,000
+            <button onclick="selectGame('DAYS GONE', 10000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Devil May Cry 5:</span> $9,500
+            <button onclick="selectGame('Devil May Cry 5', 9500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Gas Station Simulator:</span> $1,000
+            <button onclick="selectGame('Gas Station Simulator', 1000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Rainbow 6:</span> $9,500
+            <button onclick="selectGame('Rainbow 6', 9500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>GTA5:</span> $5,000
+            <button onclick="selectGame('GTA5', 5000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Resident Evil 4:</span> $10,000
+            <button onclick="selectGame('Resident Evil 4', 10000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Sekiro:</span> $15,000
+            <button onclick="selectGame('Sekiro', 15000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Subnautica:</span> $4,000
+            <button onclick="selectGame('Subnautica', 4000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>BeamNG.Drive:</span> $4,500
+            <button onclick="selectGame('BeamNG.Drive', 4500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>CupHead:</span> $4,900
+            <button onclick="selectGame('CupHead', 4900)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Dark Souls I:</span> $15,500
+            <button onclick="selectGame('Dark Souls I', 15500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>For Honor:</span> $5,500
+            <button onclick="selectGame('For Honor', 5500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Call Of Duty Black Ops II:</span> $5,000
+            <button onclick="selectGame('Call Of Duty Black Ops II', 5000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Forza Horizon 5:</span> $10,300
+            <button onclick="selectGame('Forza Horizon 5', 10300)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Spiderman:</span> $20,000
+            <button onclick="selectGame('Spiderman', 20000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Mortal Kombat 1:</span> $9,500
+            <button onclick="selectGame('Mortal Kombat 1', 9500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Detroit Become Human:</span> $10,000
+            <button onclick="selectGame('Detroit Become Human', 10000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Hitman 2:</span> $4,000
+            <button onclick="selectGame('Hitman 2', 4000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Ghost of Tsushima:</span> $13,000
+            <button onclick="selectGame('Ghost of Tsushima', 13000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>CYBERPUNK 2077:</span> $13,000
+            <button onclick="selectGame('CYBERPUNK 2077', 13000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>PORTAL 2:</span> $3,000
+            <button onclick="selectGame('PORTAL 2', 3000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Uncharted Legado de los Ladrones:</span> $9,500
+            <button onclick="selectGame('Uncharted Legado de los Ladrones', 9500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Red Dead Redemption 2:</span> $15,000
+            <button onclick="selectGame('Red Dead Redemption 2', 15000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>The WITCHER 3:</span> $20,000
+            <button onclick="selectGame('The WITCHER 3', 20000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Sea Of Thieves:</span> $15,500
+            <button onclick="selectGame('Sea Of Thieves', 15500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Spiderman Miles Morales:</span> $6,000
+            <button onclick="selectGame('Spiderman Miles Morales', 6000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>God of War:</span> $10,300
+            <button onclick="selectGame('God of War', 10300)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Assetto Corsa:</span> $17,000
+            <button onclick="selectGame('Assetto Corsa', 17000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>BeamNG.Drive:</span> $15,000
+            <button onclick="selectGame('BeamNG.Drive', 15000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Call Of Duty All Games Account:</span> $4,000
+            <button onclick="selectGame('Call Of Duty All Games Account', 4000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Far Cry 6:</span> $4,500
+            <button onclick="selectGame('Far Cry 6', 4500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>BATTLEFIELD IIIII:</span> $31,000
+            <button onclick="selectGame('BATTLEFIELD IIIII', 31000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>BATTLEFIELD IIII:</span> $20,000
+            <button onclick="selectGame('BATTLEFIELD IIII', 20000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>BATTLEFIELD I:</span> $10,000
+            <button onclick="selectGame('BATTLEFIELD I', 10000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Hitman I:</span> $5,000
+            <button onclick="selectGame('Hitman I', 5000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>HITMAN III:</span> $5,000
+            <button onclick="selectGame('HITMAN III', 5000)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>TEKKEN 8:</span> $7,500
+            <button onclick="selectGame('TEKKEN 8', 7500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Ark Survival Evolved:</span> $7,500
+            <button onclick="selectGame('Ark Survival Evolved', 7500)">Seleccionar</button>
+        </div>
+        <div class="game-item">
+            <span>Euro Truck Simulator 2:</span> $15,000
+            <button onclick="selectGame('Euro Truck Simulator 2', 15000)">Seleccionar</button>
+        </div>
+    </section>
+
+    <section id="selected-game">
+        <h2>Juego Seleccionado</h2>
+        <p id="game-name">Ninguno</p>
+        <p id="game-price">$0</p>
+        <a id="payment-link" href="#" class="btn-pay" style="display:none;" onclick="redirectToConfirmation()">Pagar Ahora</a>
+    </section>
+
+    <section id="register">
+        <h2>Registro</h2>
+        <form id="register-form">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p id="register-message"></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contáctanos</h2>
+        <p>Síguenos en Instagram: <a href="https://www.instagram.com/juegos_digitales_steam/" target="_blank">juegos_digitales_steam</a></p>
+        <p>Teléfono: +54 3518023457</p>
+    </section>
+
+    <section id="discounts">
+        <h2>Descuentos</h2>
+        <p>Cada semana ofrecemos 2x1 y regalamos nuevos juegos.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ventas de Juegos Digitales. CVU: 0000003100076952929481</p>
+    </footer>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js"></script>
+    <script>
+        function updatePromotion() {
+            const now = new Date();
+            const dayOfWeek = now.getDay(); // 0 = Domingo, 1 = Lunes, ..., 6 = Sábado
+    
+            let promotionMessage = '';
+    
+            switch (dayOfWeek) {
+                case 0: // Domingo
+                    promotionMessage = 'Hoy, ¡regalamos 2 juegos!';
+                    break;
+                case 1: // Lunes
+                    promotionMessage = 'Lunes: ¡25% de descuento en todos los juegos!';
+                    break;
+                case 2: // Martes
+                    promotionMessage = 'Martes: ¡Compra 1 y lleva 2! (2x1)';
+                    break;
+                case 3: // Miércoles
+                    promotionMessage = 'Miércoles: ¡Juego de regalo con tu compra!';
+                    break;
+                case 4: // Jueves
+                    promotionMessage = 'Jueves: No hay promociones hoy.';
+                    break;
+                case 5: // Viernes
+                    promotionMessage = 'Viernes: Responde una pregunta aleatoria por WhatsApp y gana un juego si aciertas a la primera.';
+                    break;
+                case 6: // Sábado
+                    promotionMessage = 'Sábado: ¡2x1 y 50% de descuento en todos los juegos!';
+                    break;
+            }
+    
+            document.getElementById('promotion-message').textContent = promotionMessage;
+        }
+    
+        // Llama a la función al cargar la página
+        document.addEventListener('DOMContentLoaded', updatePromotion);
+    </script>
+    
+    <script>
+        // Inicializar Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyAy_tFmv0qllbsBDKP6B8gJUacqvF0_zTw",
+            authDomain: "juegosdigitales-8dcdf.firebaseapp.com",
+            projectId: "juegosdigitales-8dcdf",
+            storageBucket: "juegosdigitales-8dcdf.appspot.com",
+            messagingSenderId: "271607593199",
+            appId: "1:271607593199:web:6f9d566c489e2924eb831a"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        function selectGame(name, price) {
+            document.getElementById('game-name').textContent = name;
+            document.getElementById('game-price').textContent = `$${price}`;
+            document.getElementById('payment-link').style.display = 'inline-block'; // Mostrar el botón de pago
+        }
+        function redirectToConfirmation() {
+            const gameName = document.getElementById('game-name').textContent;
+            const gamePrice = document.getElementById('game-price').textContent.replace('$', '');
+            const alias = '0000003100076952929481';
+            const confirmationUrl = `confirmation.html?game=${encodeURIComponent(gameName)}&price=${gamePrice}&alias=${alias}`;
+            window.location.href = confirmationUrl;
+        }
+        // Manejo del formulario de registro
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+    
+            auth.createUserWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    document.getElementById('register-message').textContent = 'Registro exitoso!';
+                })
+                .catch((error) => {
+                    document.getElementById('register-message').textContent = `Error: ${error.message}`;
+                });
+        });
+    
+        // Manejo del formulario de inicio de sesión
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+    
+            auth.signInWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    document.getElementById('login-message').textContent = 'Inicio de sesión exitoso!';
+                    // Redirigir a la página principal o mostrar información del usuario
+                    // window.location.href = 'pagina_principal.html'; // Ejemplo de redirección
+                })
+                .catch((error) => {
+                    document.getElementById('login-message').textContent = `Error: ${error.message}`;
+                });
+        });
+    </script>
+    
+</body>
+</html>
